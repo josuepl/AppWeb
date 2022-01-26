@@ -7,7 +7,7 @@
     <title>uso de Display</title>
     <style>
         .banner{
-            width: 100%;
+            width: 95%;
             height: 200px;
             font-size: 100 px;
             background-color: black;
@@ -20,7 +20,7 @@
             border: solid cyan 2px;
             background-color: rgba(42, 145, 145, 0.63);
             text-align: center;
-            width: 100%;
+            width: 95%;
         }
         ul{
             display: block;
@@ -31,19 +31,75 @@
         a{
             color: black;
         }
+        .navDer{
+            width: 15%;
+            background-color: darkcyan;
+            height: 500px;
+            display: inline-flex;
+        }
+        .contenedor{
+            width: 95%;
+            background-color: darkolivegreen;
+        }
+        .principal{
+            width: 50%;
+            display: inline-grid;
+        }
+        img{
+            width: 100%;
+        }
+        section{
+            width: 90%;
+        }
+        aside{
+            display: inline-grid;
+            width: 20%;
+        }
     </style>
 </head>
 <body>
     <header class="banner"> <h1>USO DE CSS I</h1></header>
-    <!-- Menú de navegación -->
     <nav>
         <ul>
-            <li> <a href="enlace1">enlace 1</a></li>
-            <li> <a href="enlace2">enlace 2</a></li>
-            <li> <a href="enlace3">enlace 3</a></li>
+            <li> <a href="#enlace1">enlace 1</a></li>
+            <li> <a href="#enlace2">enlace 2</a></li>
+            <li> <a href="#enlace3">enlace 3</a></li>
         </ul>
-       
-
     </nav>
+    
+    <div class="contenedor">     
+        <nav class="navDer">
+            <ul>
+                <li> <a href="#enlace1">enlace 1</a></li>
+                <li> <a href="#enlace2">enlace 2</a></li>
+                <li> <a href="#enlace3">enlace 3</a></li>
+            </ul>
+        </nav>
+
+        <div class="principal">
+            <section id="enlace1">
+                <header><h1>ENLACE 1</h1></header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum provident, amet sit similique alias laboriosam in! Labore reiciendis ipsa itaque provident corrupti, perferendis delectus eligendi. Illo eum officiis blanditiis perspiciatis?</p>
+                <img src="https://img2.freepng.es/20180509/sbe/kisspng-chemistry-molecule-covalent-bond-chemical-polarity-we-throw-away-more-than-rubbish-5af28734de6d24.7052921515258437649111.jpg" alt="" srcset="">
+            </section>
+            <section id="enlace2">
+                <header><h1>ENLACE 1</h1></header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum provident, amet sit similique alias laboriosam in! Labore reiciendis ipsa itaque provident corrupti, perferendis delectus eligendi. Illo eum officiis blanditiis perspiciatis?</p>
+                <img src="https://img2.freepng.es/20180509/sbe/kisspng-chemistry-molecule-covalent-bond-chemical-polarity-we-throw-away-more-than-rubbish-5af28734de6d24.7052921515258437649111.jpg" alt="" srcset="">
+            </section>
+            <section id="enlace3">
+                <header><h1>ENLACE 1</h1></header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum provident, amet sit similique alias laboriosam in! Labore reiciendis ipsa itaque provident corrupti, perferendis delectus eligendi. Illo eum officiis blanditiis perspiciatis?</p>
+                <img src="https://img2.freepng.es/20180509/sbe/kisspng-chemistry-molecule-covalent-bond-chemical-polarity-we-throw-away-more-than-rubbish-5af28734de6d24.7052921515258437649111.jpg" alt="" srcset="">
+            </section>
+        </div>
+        <aside>
+            <header><h1>ASIDE</h1></header>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus provident facere odit dicta quia ipsa fugiat maxime alias aliquam? Maiores quibusdam blanditiis neque itaque! Rem tempora dicta adipisci quibusdam perferendis?</p>
+        </aside>
+
+    </div>
+    <!-- Menú de navegación -->
+   
 </body>
 </html>
