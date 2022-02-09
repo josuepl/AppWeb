@@ -1,0 +1,24 @@
+.tarjeta{
+    background-color: turquoise;
+    color: blue;
+    width: 40%;
+    text-align: justify;
+    display: inline-block;
+}
+.banner{
+    background-color: rgba(0, 10, 240, .35);
+    color: whitesmoke;
+    width: 95%;
+    margin: 2%;
+    height: 200px;
+    font: 4em Times;
+    text-align: center;
+    border: solid slategray 2px;
+}
+img{
+    width: 90%;
+}
+.contenedor{
+    width: 95%;
+    display: inline-flexbox;
+}

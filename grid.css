@@ -1,0 +1,19 @@
+.banner{
+    background-color: rgba(0, 10, 240, .35);
+    color: whitesmoke;
+    width: 95%;
+    margin: 2%;
+    height: 200px;
+    font: 4em Times;
+    text-align: center;
+    border: solid slategray 2px;
+}
+.contenedor{
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+img{
+    width: 90%;
+}
