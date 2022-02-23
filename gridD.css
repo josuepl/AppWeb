@@ -1,0 +1,43 @@
+*{
+ margin: 3px;
+ padding: 1px;
+ border: 0px;   
+}
+.principal{
+    background-color: blue;
+    color: white;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px
+    50px
+    1fr
+    200px
+    50px;
+}
+
+.banner{
+    background-color: #002973;
+    color: white;
+}
+
+.nav{
+    background-color: #155db1;
+    color:white;
+}
+
+.contenido{
+    background-color: #2196f3;
+    color: black;
+}
+
+.aside{
+    background-color: #b9ffff;
+    color: black;
+}
+.footer{
+    background-color: #002973;
+    color: white;
+}
