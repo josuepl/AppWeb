@@ -10,34 +10,48 @@
     min-height: 100vh;
     display: grid;
     width: 95%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 150px
     50px
-    1fr
-    200px
+    2fr
     50px;
+    grid-template-areas: 
+    "bannerG bannerG bannerG"
+    "navG navG navG"
+    "asideG contenidoG contenidoG"
+    "footerG footerG footerG";
 }
 
 .banner{
     background-color: #002973;
     color: white;
+    grid-area: bannerG;
 }
 
 .nav{
     background-color: #155db1;
     color:white;
+    grid-area: navG;
+}
+.nav2{
+    background-color: #155db1;
+    color:white;
+    grid-area: navG;
 }
 
 .contenido{
     background-color: #2196f3;
     color: black;
+    grid-area: contenidoG;
 }
 
 .aside{
     background-color: #b9ffff;
     color: black;
+    grid-area: asideG;
 }
 .footer{
     background-color: #002973;
     color: white;
+    grid-area: footerG;
 }
