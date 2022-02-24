@@ -10,16 +10,16 @@
     min-height: 100vh;
     display: grid;
     width: 95%;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
     grid-template-rows: 150px
     50px
     2fr
     50px;
     grid-template-areas: 
-    "bannerG bannerG bannerG"
-    "navG navG navG"
-    "asideG contenidoG contenidoG"
-    "footerG footerG footerG";
+    "bannerG bannerG bannerG bannerG"
+    "navG navG navG navG"
+    "nav2G contenidoG asideG asideG"
+    "footerG footerG footerG footerG";
 }
 
 .banner{
@@ -36,7 +36,7 @@
 .nav2{
     background-color: #155db1;
     color:white;
-    grid-area: navG;
+    grid-area: nav2G;
 }
 
 .contenido{
