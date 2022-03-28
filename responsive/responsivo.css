@@ -1,0 +1,78 @@
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+.principal{
+    display: grid;
+    grid-column: 1fr;
+    grid-template-areas: 
+    "myBanner"
+    "myNav"
+    "mySection"
+    "myAside"
+    "myFooter";
+}
+.myBanner{
+    grid-area: myBanner;
+}
+.myNav{
+    grid-area: myNav;
+}
+.mySection{
+    grid-area: mySection;
+}
+
+.myFooter{
+    grid-area: myFooter;
+}
+
+@media (min-width:200px) {
+    .principal{
+        display: grid;
+        grid-column: 1fr ;
+        grid-template-areas: 
+        "myBanner"
+        "myNav "
+        "mySection "
+        "myFooter ";
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .myAside{
+        display: none;
+    }
+}
+
+@media (min-width:400px) {
+    .principal{
+        display: grid;
+        grid-column: 1fr 3fr ;
+        grid-template-areas: 
+        "myBanner myBanner"
+        "myNav myNav"
+        "myAside mySection"
+        "myFooter myFooter";
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:800px) {
+    .principal{
+        display: grid;
+        grid-column: 1fr 5fr 1fr;
+        grid-template-areas: 
+        "myBanner myBanner myBanner"
+        "myNav mySection myAside"
+        "myNav mySection myAside"
+        "myFooter myFooter myFooter";
+    }
+    nav ul{
+       flex-direction: column;
+    }
+}

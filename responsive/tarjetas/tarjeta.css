@@ -1,0 +1,56 @@
+*{
+    padding: 2px;
+    margin: 2px;
+}
+img{
+    width: 100%;
+
+}
+.tarjeta{
+    background-color: #155db1;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "myHeader myHeader myHeader"
+    "myContenido myContenido myImg"
+    "myContenido myContenido myFooter";
+}
+.myHeader{
+    display: flex;
+    grid-area: myHeader;
+    text-align: center;
+}
+
+.myContenido{
+    grid-area: myContenido;
+}
+.myFooter{
+    grid-area: myFooter;
+}
+.myImg{
+    width: 95%;
+    grid-area: myImg;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:400px) {
+    .tarjeta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader"
+        "myImg";
+    }
+
+    .myContenido{
+        display: none;
+    }
+    .myFooter{
+        display: none;  
+    }
+}

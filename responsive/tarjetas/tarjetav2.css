@@ -1,0 +1,184 @@
+:root{
+    --bg-color:#a368e67e;
+    --txt-color:#2b232b9f;
+    --txt-font: 'Sans ' 1.5em;
+}
+
+*{
+    padding: 2px;
+    margin: 2px;
+}
+img{
+    width: 100%;
+
+}
+.container{
+    background-color: blue;
+    color: white;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    grid-template-rows: 150px
+    50px
+    2fr
+    50px;
+    grid-template-areas: 
+    "bannerG bannerG bannerG bannerG"
+    "navG navG navG navG"
+    "contenidoG contenidoG asideG asideG"
+    "footerG footerG footerG footerG";
+}
+.banner{
+    background-color: #002973;
+    color: white;
+    grid-area: bannerG;
+}
+
+.nav{
+    background-color: #155db1;
+    color:white;
+    grid-area: navG;
+}
+.contenido{
+    background-color: #2196f3;
+    color: black;
+    grid-area: contenidoG;
+}
+.tarjeta{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "myHeader myHeader myHeader"
+    "myContenido myContenido myImg"
+    "myContenido myContenido myFooter";
+}
+.tarjeta2{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "myHeader myHeader myHeader"
+    "myContenido myContenido myImg"
+    "myContenido myContenido myFooter";
+}
+.tarjeta3{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "myHeader myHeader myHeader"
+    "myContenido myContenido myImg"
+    "myContenido myContenido myFooter";
+}
+.myHeader{
+    display: flex;
+    grid-area: myHeader;
+    text-align: center;
+}
+
+.myContenido{
+    grid-area: myContenido;
+    font:var(--txt-font)
+}
+.myFooter{
+    grid-area: myFooter;
+}
+.myImg{
+    width: 95%;
+    grid-area: myImg;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside{
+    background-color: #b9ffff;
+    color: black;
+    grid-area: asideG;
+}
+.footer{
+    background-color: #002973;
+    color: white;
+    grid-area: footerG;
+}
+
+@media (max-width:400px) {
+    .tarjeta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader"
+        "myImg";
+    }
+    .tarjeta2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader"
+        "myImg";
+    }
+    .tarjeta3{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader"
+        "myImg";
+    }
+    .myContenido{
+        display: none;
+    }
+    .myFooter{
+        display: none;  
+    }
+}
+@media (max-width:800px) {
+    .tarjeta{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader myHeader"
+        "myImg myImg"
+        "myFooter myFooter";
+    }
+    .tarjeta2{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader myHeader"
+        "myImg myImg"
+        "myFooter myFooter";
+
+    }
+    .tarjeta3{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+        "myHeader myHeader"
+        "myImg myImg"
+        "myFooter myFooter";
+    }
+    .myContenido{
+        display: none;
+    }
+
+}
