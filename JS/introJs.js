@@ -18,9 +18,9 @@ console.log(`sinAlcance : ${sinAlcance}`)
 function prueba1(){
     let nombre = prompt("Ingresa tu nombre")
     if(nombre =="josue"){
-        console.log("Bienvenido Josue");
-        let encabezado = 
-        document.write()
+        console.log("Bienvenido ${nombre}");
+        let encabezado = `<header><h1>Bienvenido ${nombre}</h1></header>`;
+        document.write(encabezado)
     }
 }
 
