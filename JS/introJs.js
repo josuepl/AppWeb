@@ -8,6 +8,25 @@ alert("la variable contiene: "+ variable)
 variable = true
 alert("la variable contiene: "+ variable)*/
 console.log(variableConst)
+
+let sinAlcance = 10;
+{
+    let sinAlcance = 20;
+}
+console.log(`sinAlcance : ${sinAlcance}`)
+
+function prueba1(){
+    let nombre = prompt("Ingresa tu nombre")
+    if(nombre =="josue"){
+        console.log("Bienvenido Josue");
+        let encabezado = 
+        document.write()
+    }
+}
+
+
+
+
 function prueba(){
     console.log(variableConst);
     let texto1 = "Hola Mundo";
