@@ -7,13 +7,55 @@ variable = "TEXTO"
 alert("la variable contiene: "+ variable)
 variable = true
 alert("la variable contiene: "+ variable)*/
-console.log(variableConst)
+//console.log(variableConst)
+
+function ciclos(){
+    for(let contador=0; contador < 10; contador++){
+        console.log(`El valor de contador es: ${contador}`);
+    }
+    let opc;
+    do{
+        opc = prompt("Ingresa tu nombre");
+    }while(opc != 'josue');
+
+    let numeros = [5,7,8,9];
+    for(let numero in numeros){
+        console.log(`El numero obtenido es ${numero}`);
+    }
+    for(let numero of numeros){
+        console.log(`El numero obtenido es ${numero}`);
+    } 
+
+}
 
 let sinAlcance = 10;
 {
     let sinAlcance = 20;
 }
 console.log(`sinAlcance : ${sinAlcance}`)
+
+//ciclos()
+
+function manejoDeArreglos(){
+    let dias = ["lunes","martes", "miercoles","jueves","viernes"];
+    console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
+    console.log("Los dias de la semana son: "+ dias + " -> estan dentro de un arreglo");
+    console.log(`${dias[0]}`);
+    dias.forEach( (element, index) => {
+    console.log(element, index);        
+    });
+    dias.push("sabado");
+    console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
+    let diaRes= dias.pop();
+    console.log("diaRes: " + diaRes);
+    console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
+    dias.unshift("domingo");
+    console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
+    diaRes = dias.shift()
+    console.log("diaRes: " + diaRes);
+    console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
+    posicion = dias.indexOf('miercoles');    
+}
 
 function prueba1(){
     let nombre = prompt("Ingresa tu nombre")
@@ -22,6 +64,44 @@ function prueba1(){
         let encabezado = `<header><h1>Bienvenido ${nombre}</h1></header>`;
         document.write(encabezado)
     }
+    else if(nombre == 'pepe'){
+        console.log(`HOLA ${nombre}`);
+        let encabezado = `<header><h1>HOLA ${nombre}</h1></header>`;
+        document.write(encabezado)
+    }
+    else{
+        nombre = 'Invitado'
+        console.log(`Bienvenido ${nombre}`);
+        let encabezado = `<header><h1>Bienvenido ${nombre}</h1></header>`;
+        document.write(encabezado)
+    }
+    validaOpcion()
+}
+
+function validaOpcion(){
+    let menu = 
+    `1) Evaluar \n
+     2) Ordenar \n
+     3) Comprar \n
+    `;
+
+    let opc = prompt("Elije algunas de las siguientes opciones: " +menu);
+    console.log(opc);
+    switch(opc){
+        case '1':
+            console.log("Has elegido evaluar");
+            break;
+        case '2':
+            console.log("Has elegido Ordenar");
+            break;
+        case '3':
+            console.log("Has elegido Comprar");
+            break;
+        default:
+            console.log("Opcion no valida");
+            break;
+    }
+
 }
 
 
