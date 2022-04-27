@@ -1,3 +1,33 @@
+class diasSemana{
+    lista= [];
+    nombreR = "";
+    constructor(nombre,valor,temperatura, estado){
+        this.nombre = nombre;
+        this.valor = valor;
+        this.temperatura = temperatura;
+        this.estado= estado;
+    }
+    set nombre(varNombre){
+        this.nombreR = varNombre;
+        this.lista.push(varNombre);
+    } 
+
+    get diaLaboral(){
+        return this.validaDia();
+    }
+
+    validaDia() {
+     if (this.nombreR1    == 'martes'){
+         return "Es laborable";
+     }
+     else{
+         return "no es laborable";
+     }    
+    }
+}
+
+
+
 var variable;
 let variableLet;
 const variableConst = 9.81;
@@ -36,6 +66,25 @@ console.log(`sinAlcance : ${sinAlcance}`)
 
 //ciclos()
 
+function manejoDeObjetos(){
+    let diaUno = new diasSemana("lunes",4,32,"Caluroso");
+    console.log(`Dia Agregado: ${Object.entries(diaUno)}`);
+    diaUno = "Otro dia de la semana";
+    console.log(`Dia Modificado: ${diaUno}`);
+    const diaDos = new diasSemana("martes",5,16,"Templado");
+    console.log(diaDos);
+    console.log(`Dia Agregado: ${Object.entries(diaDos)}`);
+    //diaDos.nombre = "sabado";
+    diaDos.nombre = "Sabado";
+    diaDos.nombre = "Domingo";
+    diaDos.nombre = "Feriado";
+    diaDos.nombre = "martes";
+    console.log(`Dia Modificado: ${Object.entries(diaDos)}`);
+    console.log(`dias previos: ${diaDos.lista}`);
+    console.log(`Este dia ${diaDos.nombre} es ${diaDos.diaLaboral}`);
+    console.log(diaDos);
+}
+
 function manejoDeArreglos(){
     let dias = ["lunes","martes", "miercoles","jueves","viernes"];
     console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
@@ -54,7 +103,9 @@ function manejoDeArreglos(){
     diaRes = dias.shift()
     console.log("diaRes: " + diaRes);
     console.log(`Los dias de la semana son: ${dias} -> estan dentro de un arreglo`);
-    posicion = dias.indexOf('miercoles');    
+    let diaEnc ="miercoles"
+    let posicion = dias.indexOf(diaEnc);
+    console.log(`la posicion es ${posicion} ->  `)    
 }
 
 function prueba1(){

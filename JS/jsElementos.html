@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="elementos.js"></script>
+    <title>Elementos JS</title>
+</head>
+<body>
+    <form action="#" id="formulario">
+        <header><h1>Formulario y Javascript</h1></header>
+        <ul>
+            <li> <label for="nombre"> Ingresa tu nombre</label>
+                <input type="text" name="nombre" id="nombreUsr">
+            </li>
+            <li> <label for="email"> Ingresa tu correo-electronico</label>
+                <input type="email" name="email" id="emailUsr">
+            </li>
+
+            <li>
+                <label for="passwd"> Ingresa tu contrasena</label>
+                <input type="password" name="passwd" id="passwdUsr">
+            </li>
+
+            <li>
+                <label for="comentario">Ingresa tu comentario sobre la pagina</label>
+                <textarea name="comentario" id="comentarioUsr"></textarea>
+            </li>
+
+            <li>
+                <ul>
+                    <li><input type="checkbox" name="menu" id="menu1" value="Opcion1"><label for="menu1">Opcion1</label></li>
+                    <li><input type="checkbox" name="menu" id="menu2" value="Opcion2"><label for="menu1">Opcion2</label></li>
+                    <li><input type="checkbox" name="menu" id="menu3" value="Opcion3"><label for="menu1">Opcion3</label></li>
+                    <li><input type="checkbox" name="menu" id="menu4" value="Opcion4"><label for="menu1">Opcion4</label></li>
+                    <li><input type="checkbox" name="menu" id="menu5" value="Opcion5"><label for="menu1">Opcion5</label></li>
+                </ul>
+   
+            </li>
+            <button name="uno" id="uno" onclick="btnUno();"> 1</button>
+            <button name="dos" id="dos" onclick="btnDos();"> 2</button>
+
+
+        </ul>
+    </form>
+    
+</body>
+</html>
